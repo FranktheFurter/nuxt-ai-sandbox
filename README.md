@@ -39,4 +39,8 @@ For local testing of project-pages paths:
 NUXT_APP_BASE_URL=/your-repo-name/ pnpm run build:github-pages
 ```
 
-In GitHub repository settings, set **Pages** source to **GitHub Actions**.
+In GitHub repository settings, make sure:
+
+- **Pages is available for the repository**.
+  In many setups, this means the repo must be **public** (or your plan must support Pages for private repos).
+- **Settings -> Pages -> Build and deployment -> Source** is set to **GitHub Actions** (not the default branch source).
